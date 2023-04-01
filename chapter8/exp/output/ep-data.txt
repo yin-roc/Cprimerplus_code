@@ -1,0 +1,2 @@
+Focal length of objective: 1800 mm
+3060, 1995, 14129, 8.8205, 7.5240, 

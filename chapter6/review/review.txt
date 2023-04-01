@@ -1,0 +1,58 @@
+1、节省时间
+
+2、ch+1 转化成 int 型，最终输出非数字，而非字符
+
+3、
+    H$i$!$
+    $S$e$n$d$ $$$ct1 = 10, ct2 = 10
+
+4、
+    a、(weight >= 115) && (weight < 125)
+    b\ ch == 'q' || ch == 'Q'
+    c\ (x % 2) == 0 && (x != 26)
+    d\ (x % 2) == 0 && ((x % 26) != 0)
+    e\ ((donation > 1000) && (donation < 2000)) || (guest == 1)
+    f\ (ch >= 65 && ch <= 92) || (ch >= 97 && ch <= 122)//错误的
+    应该是'a','A','z','Z' 
+
+5、
+    不一定相同
+    1）假设 x = 10;
+    则  !x = 0 ;
+        !!x=1;
+    2）若 x = 0;
+    则  !x = 1;
+        !!x = 0;
+
+6、
+    int x = 0;
+    if(x > 0)
+    cout << x << endl;
+    else if(x < 0)
+    cout << -x << endl;
+
+7、
+    char ch;
+    switch(ch)
+    {
+        case 'A': a_grade++;break; 
+        
+        case 'B': b_grade++;break; 
+
+        case 'C': c_grade++;break; 
+
+        case 'D': d_grade++;break; 
+
+        case 'F': f_grade++;break; 
+    }
+
+8、
+
+
+9、
+    int line = 0;
+    char ch;
+    while(cin.get(ch) != 'Q' && cin.get(ch) != '\n')
+    {
+        line++;
+    }
