@@ -1,0 +1,69 @@
+//1、执行函数需要花很长时间在调用过程上时，可以采用内联函数调用
+
+// 2、
+// a、
+void song(const char * name, int times = 1);
+// b、
+// c、应该不能
+
+// 3、
+error：
+iquote(const char *, int)
+iquote(const char *, double)
+iquote(string , int)
+
+correct：
+void iquote(int n)
+{
+    cout << "\"" << n << "\"";
+}
+
+void iquote(double n)
+{
+    cout << "\"" << n << "\"";
+}
+
+void iquote(string n)
+{
+    cout << "\"" << n << "\"";
+}
+
+// 4、
+//4-a.cpp
+//4-b.cpp
+
+
+5----->5.cpp
+
+6、
+首先要明白：函数重载是如何才算
+特征标一样的话，变量名无关紧要
+特征标一样：形参的类型和数目
+
+a.可以 -->既可以使用默认参数，又可以使用函数重载
+b.可以 -->不能使用默认参数，可以使用重载
+c.可以 -->不可以使用默认参数，但可以使用函数重载
+d.不算是函数重载
+
+7、见7.cpp
+
+
+8\
+
+
+9、
+int g(int x);
+
+float m = 5.5f;
+float & rm = m;
+decltype(m) v1 = m;
+decltype(rm) v2 = m;
+decltype(m) v3 = m;
+decltype (g(100)) v4;
+decltype (2.0 * m) v5;
+
+v1:decltype的返回类型:float
+v2:decltype的返回类型:float &
+v3:decltype的返回类型:float &
+v4:int
+v5:float
