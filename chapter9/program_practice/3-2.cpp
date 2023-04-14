@@ -4,28 +4,28 @@
 
 using namespace std;
 
-struct chaff
-{
-    char dross[20];
-    int slag;
-};
-
 const int BUF = 512;
 char buffer[BUF];
 const int ArSize = 20;
 
+struct chaff
+{
+    char dross[ArSize];
+    int slag;
+};
 
 void SetValue(chaff *);
 void showchaff(chaff *);
 
 int main()
 {
-    chaff * pt = new (buffer) chaff[2];
-    SetValue(pt);
-    showchaff(pt);
+    chaff * pt1 = new (buffer) chaff;
+    SetValue(pt1);
+    showchaff(pt1);
 
-    SetValue(pt+1);
-    showchaff(pt+1);
+    chaff * pt2 = new (buffer + ArSize * sizeof(char) + sizeof(int)) chaff;
+    SetValue(pt2);
+    showchaff(pt2);
 
     // delete [] pt;
     return 0;

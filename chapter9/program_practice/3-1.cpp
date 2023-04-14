@@ -42,9 +42,9 @@ void SetValue(chaff * pt)
 
     cout << "Enter the second value of dross: ";
     cin.get(input, ArSize).get();    
-    strcpy((pt+1)->dross, input);
+    strcpy(pt[1].dross, input);
     cout << "Enter the second value of slag: ";
-    cin >> (pt+1)->slag;
+    cin >> pt[1].slag;
     cin.get();
 }
 
