@@ -1,0 +1,95 @@
+1、
+私有数据和公有函数的集合
+
+2、
+抽象：
+
+封装：
+
+数据隐藏：private
+
+3、
+对象相当于类定义的一个变量，可以使用类的方法，通过类的方法可以使用类的私有数据
+
+4、
+类的数据成员一般是私有的，内部可见，外部不可见，只有类的函数能够使用
+类的函数成员是公有的，外部可以使用
+
+5、
+#include <string>
+class Bank_account
+{
+    private:
+        std::string name;
+        std::string account;
+        double deposit;
+    public:
+        Bank_account();
+        Bank_account(const std::string & m_name, const std::string m_account, double m_deposit);
+        show(const std::string &);
+        void push(const std::string &, double &);
+        void pull(const std::string &, double &);
+}
+
+6、
+类构造函数：在没有其他构造函数时，调用默认构造函数；在有其他构造函数时，调用非默认构造函数
+
+类析构函数：程序结束时调用
+
+7、
+    Bank_account()
+    {
+        name = "NULL";
+        account = "0";
+        deposit = 0;
+    }
+
+    Bank_account(const std::string & m_name, const std::string m_account, double m_deposit)
+    {
+        name = m_name;
+        account = m_account;
+        deposit = m_deposit;
+    }
+
+
+8、默认构造函数可以在对象没有初始化时，给对象自动初始化
+
+9、
+#ifndef STOCK20_H__
+#define STOCK20_H__
+
+#include <string>
+
+class Stock
+{
+    private:
+        std::string company;
+        long shares;
+        double share_val;
+        double total_val;
+        void set_tot()
+        {
+            total_val = shares * share_val;
+        }
+    public:
+        Stock();
+        Stock(const std::string & co, long n = 0, double pr = 0.0);
+        ~Stock();
+        void buy(long num, double price);
+        void sell(long num, double price);
+        void update(double price);
+        void show() const;
+        const Stock & topval(const Stock & s) const;
+        char *return_company(const Stock *);
+        long return_shares(const Stock &);
+        double return_share_val(const Stock &);
+        double return_total_val(const Stock &);
+
+
+};
+
+#endif
+
+10、
+this是指向隐式对象的指针，本身表示一个地址
+*this表示当前类对象
