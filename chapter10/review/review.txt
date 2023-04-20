@@ -1,5 +1,6 @@
 1、
-私有数据和公有函数的集合
+私有数据和公有函数的集合//err
+用户自己定义的数据类型
 
 2、
 抽象：
@@ -26,9 +27,9 @@ class Bank_account
     public:
         Bank_account();
         Bank_account(const std::string & m_name, const std::string m_account, double m_deposit);
-        show(const std::string &);
-        void push(const std::string &, double &);
-        void pull(const std::string &, double &);
+        void show() const;
+        void push(double &);
+        void pull(double &);
 }
 
 6、
@@ -37,14 +38,14 @@ class Bank_account
 类析构函数：程序结束时调用
 
 7、
-    Bank_account()
+    Bank_account::Bank_account()
     {
         name = "NULL";
         account = "0";
         deposit = 0;
     }
 
-    Bank_account(const std::string & m_name, const std::string m_account, double m_deposit)
+    Bank_accoutn::Bank_account(const std::string & m_name, const std::string m_account, double m_deposit)
     {
         name = m_name;
         account = m_account;
@@ -80,10 +81,12 @@ class Stock
         void update(double price);
         void show() const;
         const Stock & topval(const Stock & s) const;
-        char *return_company(const Stock *);
-        long return_shares(const Stock &);
-        double return_share_val(const Stock &);
-        double return_total_val(const Stock &);
+        char *return_company(const Stock *);//err
+        const string &company_name() const;
+
+        long return_shares() const;
+        double return_share_val() const;
+        double return_total_val() const;
 
 
 };

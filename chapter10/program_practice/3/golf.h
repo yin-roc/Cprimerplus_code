@@ -11,7 +11,7 @@ class Golf
     public:
     Golf(const char * name, int hc);
     Golf();
-    int setgolf();
+    // int setgolf();
     void Handicap(int hc);
     void showgolf() const;
 

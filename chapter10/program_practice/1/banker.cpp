@@ -10,5 +10,7 @@ int main()
     user1.pull(300);
     user1.show();
 
+    Bank_account user2 = Bank_account();
+    user2.show();
     return 0;
 }

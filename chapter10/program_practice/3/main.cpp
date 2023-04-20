@@ -13,19 +13,10 @@ int main()
 
     // golf andy;
     // setgolf(andy);
-    Golf players[SIZE];
-    int count = 0;
-    cout << "Enter the information of golf player: \n";
-    while((count < SIZE) && (players[count].setgolf()))
-    {
-        cout << "Enter the next golf player: \n";
-        count++;
-    }
-    cout << "Show all golf players' information.\n";
-    for(int i = 0; i < SIZE; i++)
-    {
-        players[i].showgolf();
-    }
+    Golf player1 = Golf("hello", 23);
+    player1.showgolf();
+    Golf player2;
+    player2.showgolf();
 
     return 0;
 }

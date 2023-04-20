@@ -10,7 +10,7 @@ int main()
         Sales s1 = Sales(ar, 4);
         s1.showSales();
 
-        Sales s2 = Sales();
+        Sales s2;
         s2.showSales();
 
         return 0;

@@ -4,6 +4,7 @@
 int main()
 {
     Person one;
+    one.Show();
     Person two("Smythecraft");
     Person three("Dimwiddy", "Sam");
     two.Show();
