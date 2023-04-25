@@ -50,6 +50,4 @@ int main()
     Num d = operator+(c, a);
     d.Show();
     
-
-
 }
