@@ -1,0 +1,64 @@
+1、
+class Stonewt()
+{
+    private:
+        int stones;
+        int pounds;
+        static const int stone_to_pounds = 14;
+    public:
+        Stonewt operator*(double n) const;
+};
+
+Stonewt Stonewt::operator*(double n) const
+{
+    Stonewt st;
+    st.stones = n * stones + (n * pounds) / stone_to_pounds;
+    st.pounds = (n * pounds) % stone_to_pounds;
+    return st;
+}
+
+//类构造函数实现
+Stonewt Stonewt::operator*(double n) const
+{
+   return Stonewt(n * pounds);//具体详见exp里面的构造函数具体代码 
+}
+
+2、
+友元函数与成员函数的区别：
+两者都在类中声明，但友元函数需要添加关键字friend；
+友元函数可以实现第一个操作数不是类对象；
+友元函数可以使用类里面的私有数据，但需要添加作用域限制符；而成员函数可以直接使用
+
+3、
+非成员函数也可以访问类里面的public成员，但不能访问私有数据
+
+4、
+class Stonewt()
+{
+    private:
+        int stones;
+        int pounds;
+        static const int stone_to_pounds = 14;
+    public:
+        friend Stonewt operator*(double n, const Stonewt m_stonewt);
+};
+
+Stonewt operator*(double n, const Stonewt m_stonewt)
+{
+    return m_stonewt * n;
+}//err
+
+Stonewt operator*(double n, const Stonewt & m_stonewt)
+{
+    return Stonewt(n * m_stonewt.pounds);
+}
+
+
+5、
+略
+
+6、
+只能通过成员函数重载
+
+7、
+operator double() const;
