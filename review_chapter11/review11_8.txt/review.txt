@@ -1,0 +1,48 @@
+1、使用成员函数为Stonewt类重载乘法运算符，该运算符将数据成员与double类型的值相乘。注意，用英石和磅表示时，需要进位。
+    也就是说，将10英石8磅乘以2等于21英石2磅。
+    Stonewt operator*(double x) const;
+    Stonewt operator*(double x) const
+    {
+        stone = stone * x + int(pounds * x) / Lbs_per_stn;
+        pounds = pounds * x - (int(pounds * x) / Lbs_per_stn) * Lbs_per_stn;
+        return Stonewt(stone, pounds);
+    }
+
+2、友元函数与成员函数之间的区别是什么？
+    从其性质上来看，成员函数是类定义的一部分，由类生成的所有对象均会共享类的一组成员函数。
+        从功能上看，成员函数能够访问类内部的所有数据成员。
+    而友元函数并不是类定义的一部分，而是一个具备特定的类访问权限的函数，
+        友元函数从功能上说也能够直接访问所有类的数据成员，但并不是隐式访问，而必须通过成员运算符用于参数传递的对象
+
+3、非成员函数必须是友元才能访问类成员吗？
+    从访问控制上来说，使用类对象的程序能够直接通过类对象访问所有的公有数据接口，但无法访问类的私有数据接口。
+    通过类的友元函数能够直接访问类内的所有数据成员和函数，包括具有私有访问权限的数据成员和成员函数。因此，片面地认为非成员函数必须是友元函数才能访问类成员是不正确的。
+
+4、使用友元函数为Stonewt类重载乘法运算符，该运算符将double值与Stonewt值相乘
+    friend Stonewt operator*(double x, Stonewt st);
+
+    Stonewt operator*(double x, Stonewt st)
+    {
+        st.stone = x * st.stone + int(st.pounds * x) / Lbs_per_stn ;
+        st.pounds = x * pounds - (int(st.pounds * x) / Lbs_per_stn) * Lbs_per_stn;
+        return st;
+    }
+
+5、哪些运算符不能重载？
+
+
+6、在重载运算符=、()、[]和->时，有什么限制？
+    1）重载运算符至少有一个参数是用户自定义的类型；
+    2）使用的运算符不能违反原运算符的语法规则；
+    3）不能创建新的运算符；
+    4）部分运算符不能重载；
+    5）只能使用成员函数进行重载
+
+7、为Vector类定义一个转换函数，将Vector类转换为一个double类型的值，后者表示矢量的长度。
+    operator double() const;
+
+    Vector::operator double() const
+    {
+        return sqrt(x * x + y * y);
+    }
+
