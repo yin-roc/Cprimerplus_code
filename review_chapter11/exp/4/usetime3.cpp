@@ -17,6 +17,6 @@ int main(void)
     temp = aida * 1.17;
     cout << "Aida * 1.17: " << temp << endl;
     cout << "10.0 * Tosca: " << 10.0 * tosca << endl;
-
+    
     return 0;
 }
