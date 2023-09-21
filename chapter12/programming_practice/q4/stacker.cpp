@@ -24,6 +24,5 @@ int main()
         cout << item << " is popped." << endl;
     }
 
-
     return 0;
 }
