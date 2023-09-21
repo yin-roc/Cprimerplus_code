@@ -1,0 +1,26 @@
+1、
+    a、默认构造函数没有提供默认值；
+    b、构造函数没有使用new开辟动态内存，并且只是传递了字符串的地址
+    c、没有使用new来动态开辟内存
+
+2、
+
+
+3、如果没有显示提供类方法，编译器将会自动生成：
+    构造函数、复制构造函数、析构函数、赋值运算符函数、
+
+4、
+    见4.cpp
+
+5、
+a、
+    #1、调用默认构造函数：Golfer();
+    #2、调用构造函数：Golfer(const char * name, int g = 0);
+    #3、调用构造函数：Golfer(const char * name, int g = 0);其中g采用自定义的值：12
+    #4、调用默认构造函数：Golfer();
+    #5、调用默认构造函数
+    #6、调用构造函数：Golfer(const char * name, int g = 0);
+    #7、调用构造函数：Golfer(const Golfer & g);
+    #8、调用构造函数：Golfer(const char * name, int g = 0);进行转换后赋值
+
+b、复制构造函数、重载赋值运算符函数
