@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "E:/3code/C++/Cprimerplus_code/chapter13/program_exercise/q2/out/build/x64-Debug/CMakeFiles/q2.dir/embed.manifest"

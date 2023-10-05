@@ -1,0 +1,5 @@
+# ninja log v5
+2	658	7181236846861688	CMakeFiles/q1.dir/Cd.cpp.obj	5c5fa5f7d9c46a64
+4	665	7181236846927260	CMakeFiles/q1.dir/main.cpp.obj	b49a971b10920c0
+6	668	7181236846972178	CMakeFiles/q1.dir/classic.cpp.obj	509d6ac94c9ea215
+668	931	7181236849427596	q1.exe	a2ef425c8b95881b

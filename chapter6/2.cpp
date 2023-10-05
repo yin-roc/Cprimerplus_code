@@ -16,7 +16,5 @@ int main()
         cin.get(ch);
     }
     cout << "\nPlease excuse the slight confusion.\n";
-
-
     return 0;
 }

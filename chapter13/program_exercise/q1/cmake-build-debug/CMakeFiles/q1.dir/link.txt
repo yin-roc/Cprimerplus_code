@@ -1,0 +1,3 @@
+"E:\software_install_position\JetBrains2023\CLion2023\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\q1.dir/objects.a
+D:\VSCode\mingw64\bin\ar.exe qc CMakeFiles\q1.dir/objects.a @CMakeFiles\q1.dir\objects1
+D:\VSCode\mingw64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\q1.dir/objects.a -Wl,--no-whole-archive -o q1.exe -Wl,--out-implib,libq1.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\q1.dir\linkLibs.rsp
