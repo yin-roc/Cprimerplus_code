@@ -1,0 +1,5 @@
+﻿  studenti.cpp
+E:\3code\C++\Cprimerplus_code\chapter14\exp\14.4-14.6\Project1\studenti.cpp(39,10): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  use_stui.cpp
+  正在生成代码...
+  Project1.vcxproj -> E:\3code\C++\Cprimerplus_code\chapter14\exp\14.4-14.6\Project1\x64\Debug\Project1.exe
