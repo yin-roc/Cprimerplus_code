@@ -1,0 +1,2 @@
+﻿workermi.obj : error LNK2019: 无法解析的外部符号 "public: virtual void __cdecl Worker::Set(void)" (?Set@Worker@@UEAAXXZ)，函数 "public: virtual void __cdecl Singer::Set(void)" (?Set@Singer@@UEAAXXZ) 中引用了该符号
+E:\3code\C++\Cprimerplus_code\chapter14\exp\14.10~14.12\Project1\x64\Debug\Project1.exe : fatal error LNK1120: 1 个无法解析的外部命令
