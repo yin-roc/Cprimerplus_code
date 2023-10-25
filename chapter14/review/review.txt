@@ -1,0 +1,25 @@
+1、
+
+
+2、q2
+
+
+3、q3
+
+
+4、
+
+
+5、
+1)
+ArrayTP<string, 10> aa;
+
+2)
+Stack<ArrayTP<double, 10>> stack_arr_aa;
+
+3)
+ArrayTP<Stack<Worker*>, 10> arr_stack_ptr;
+
+6、虚基类与非虚基类之间的区别
+虚基类：只继承一个基类对象
+非虚基类：有多少继承多少
