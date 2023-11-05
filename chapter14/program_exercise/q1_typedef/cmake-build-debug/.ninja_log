@@ -1,0 +1,7 @@
+# ninja log v5
+4	531	7207205638201934	CMakeFiles/q1_typedef.dir/Wine.cpp.obj	26d3f8faa8b0ff19
+1	565	7207205638528552	CMakeFiles/q1_typedef.dir/main.cpp.obj	391a80ea9652e30c
+565	733	7207205640184693	q1_typedef.exe	d316693c6cf6d5e6
+6	462	7207207989513994	CMakeFiles/q1_typedef.dir/Wine.cpp.obj	26d3f8faa8b0ff19
+3	487	7207207989769957	CMakeFiles/q1_typedef.dir/main.cpp.obj	391a80ea9652e30c
+487	648	7207207991351110	q1_typedef.exe	d316693c6cf6d5e6

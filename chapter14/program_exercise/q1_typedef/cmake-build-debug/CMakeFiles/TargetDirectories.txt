@@ -1,0 +1,3 @@
+E:/3code/C++/Cprimerplus_code/chapter14/program_exercise/q1_typedef/cmake-build-debug/CMakeFiles/q1_typedef.dir
+E:/3code/C++/Cprimerplus_code/chapter14/program_exercise/q1_typedef/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/3code/C++/Cprimerplus_code/chapter14/program_exercise/q1_typedef/cmake-build-debug/CMakeFiles/rebuild_cache.dir
