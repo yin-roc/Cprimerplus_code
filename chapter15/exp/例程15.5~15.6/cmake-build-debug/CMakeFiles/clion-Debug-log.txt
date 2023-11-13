@@ -1,4 +1,4 @@
-"E:\software_install_position\JetBrains2023\CLion2023\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S E:\3code\C++\Cprimerplus_code\chapter15\exp\例程15.4 -B E:\3code\C++\Cprimerplus_code\chapter15\exp\例程15.4\cmake-build-debug
+"E:\software_install_position\JetBrains2023\CLion2023\CLion 2023.1.1\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/software_install_position/JetBrains2023/CLion2023/CLion 2023.1.1/bin/ninja/win/x64/ninja.exe" -G Ninja -S E:\3code\C++\Cprimerplus_code\chapter15\exp\例程15.5~15.6 -B E:\3code\C++\Cprimerplus_code\chapter15\exp\例程15.5~15.6\cmake-build-debug
 -- The C compiler identification is GNU 8.1.0
 -- The CXX compiler identification is GNU 8.1.0
 -- Detecting C compiler ABI info
@@ -13,4 +13,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: E:/3code/C++/Cprimerplus_code/chapter15/exp/例程15.4/cmake-build-debug
+-- Build files have been written to: E:/3code/C++/Cprimerplus_code/chapter15/exp/例程15.5~15.6/cmake-build-debug
