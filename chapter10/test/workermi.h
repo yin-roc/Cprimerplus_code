@@ -1,5 +1,3 @@
-#pragma once
-
 #ifndef __WORKERMI_H__
 #define __WORKERMI_H__
 
@@ -83,5 +81,6 @@ public:
 	void Set();
 	void Show() const;
 };
+
 
 #endif // !__WORKERMI_H__
